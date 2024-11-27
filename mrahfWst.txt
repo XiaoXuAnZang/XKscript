@@ -25,13 +25,13 @@ function Ripple(obj)
 		local Ripple = Instance.new("ImageLabel")
 		Ripple.Name = "Ripple"
 		Ripple.Parent = obj
-		Ripple.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		Ripple.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 		Ripple.BackgroundTransparency = 1.000
 		Ripple.ZIndex = 8
-		Ripple.Image = "rbxassetid://110514576067912"
+		Ripple.Image = "rbxassetid://7733799901"
 		Ripple.ImageTransparency = 0.800
 		Ripple.ScaleType = Enum.ScaleType.Fit
-		Ripple.ImageColor3 = Color3.fromRGB(255, 0, 0)
+		Ripple.ImageColor3 = Color3.fromRGB(125, 125, 125)
 		Ripple.Position = UDim2.new((mouse.X - Ripple.AbsolutePosition.X) / obj.AbsoluteSize.X, 0, (mouse.Y - Ripple.AbsolutePosition.Y) / obj.AbsoluteSize.Y, 0)
 		Tween(Ripple, {.3, 'Linear', 'InOut'}, {Position = UDim2.new(-5.5, 0, -5.5, 0), Size = UDim2.new(12, 0, 12, 0)})
 		wait(0.15)
@@ -221,7 +221,7 @@ end
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
 
-      UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.10, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+      UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(125, 125, 125)), ColorSequenceKeypoint.new(0.10, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(125, 125, 125)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(125, 125, 125)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
 
       local TweenService = game:GetService("TweenService")
       local tweeninfo = TweenInfo.new(7, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
@@ -240,7 +240,7 @@ end
       
       TabMain.Name = "TabMain"
       TabMain.Parent = Main
-      TabMain.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+      TabMain.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
       TabMain.BackgroundTransparency = 1.000
       TabMain.Position = UDim2.new(0.217000037, 0, 0, 3)
       TabMain.Size = UDim2.new(0, 448, 0, 353)
@@ -253,7 +253,7 @@ end
       
       SB.Name = "SB"
       SB.Parent = Main
-      SB.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+      SB.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
       SB.BorderColor3 = MainColor
       SB.Size = UDim2.new(0, 8, 0, 353)
       SB.Transparency = 1.0
@@ -264,8 +264,8 @@ end
       
       Side.Name = "Side"
       Side.Parent = SB
-      Side.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-      Side.BorderColor3 = Color3.fromRGB(255, 0, 0)
+      Side.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
+      Side.BorderColor3 = Color3.fromRGB(125, 125, 125)
       Side.BorderSizePixel = 0
       Side.ClipsDescendants = true
       Side.Position = UDim2.new(1, 0, 0, 0)
@@ -295,7 +295,7 @@ end
       
       ScriptTitle.Name = "ScriptTitle"
       ScriptTitle.Parent = Side
-      ScriptTitle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+      ScriptTitle.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
       ScriptTitle.BackgroundTransparency = 1.000
       ScriptTitle.Position = UDim2.new(0, 0, 0.00953488424, 0)
       ScriptTitle.Size = UDim2.new(0, 102, 0, 20)
@@ -416,12 +416,12 @@ end
       --[[
       Open.Name = "Open"
       Open.Parent = dogent
-      Open.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+      Open.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
       Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
       Open.Size = UDim2.new(0, 61, 0, 32)
       Open.Font = Enum.Font.SourceSans
       Open.Text = "King.Script/King"
-      Open.TextColor3 = Color3.fromRGB(255, 0, 0)
+      Open.TextColor3 = Color3.fromRGB(125, 125, 125)
       Open.TextSize = 15.000
       Open.Active = true
       Open.Draggable = true
@@ -484,7 +484,7 @@ UIG.Parent = Open
         TabIco.BackgroundTransparency = 1.000
         TabIco.BorderSizePixel = 0
         TabIco.Size = UDim2.new(0, 24, 0, 24)
-        TabIco.Image = "rbxassetid://110514576067912" or icon and "rbxassetid://"..icon
+        TabIco.Image = "rbxassetid://7733799901" or icon and "rbxassetid://"..icon
         TabIco.ImageTransparency = 0.2
         
         TabText.Name = "TabText"
@@ -502,7 +502,7 @@ UIG.Parent = Open
         
         TabBtn.Name = "TabBtn"
         TabBtn.Parent = TabIco
-        TabBtn.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        TabBtn.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
         TabBtn.BackgroundTransparency = 1.000
         TabBtn.BorderSizePixel = 0
         TabBtn.Size = UDim2.new(0, 110, 0, 24)
@@ -560,7 +560,7 @@ UIG.Parent = Open
           
           SectionText.Name = "SectionText"
           SectionText.Parent = Section
-          SectionText.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+          SectionText.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
           SectionText.BackgroundTransparency = 1.000
           SectionText.Position = UDim2.new(0.0887396261, 0, 0, 0)
           SectionText.Size = UDim2.new(0, 401, 0, 36)
@@ -576,7 +576,7 @@ UIG.Parent = Open
           SectionOpen.BorderSizePixel = 0
           SectionOpen.Position = UDim2.new(0, -33, 0, 5)
           SectionOpen.Size = UDim2.new(0, 26, 0, 26)
-          SectionOpen.Image = "rbxassetid://110514576067912"
+          SectionOpen.Image = "rbxassetid://7733799901"
           
           SectionOpened.Name = "SectionOpened"
           SectionOpened.Parent = SectionOpen
@@ -594,7 +594,7 @@ UIG.Parent = Open
           
           Objs.Name = "Objs"
           Objs.Parent = Section
-          Objs.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+          Objs.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
           Objs.BackgroundTransparency = 1
           Objs.BorderSizePixel = 0
           Objs.Position = UDim2.new(0, 6, 0, 36)
@@ -634,7 +634,7 @@ UIG.Parent = Open
             
             BtnModule.Name = "BtnModule"
             BtnModule.Parent = Objs
-            BtnModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            BtnModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             BtnModule.BackgroundTransparency = 1.000
             BtnModule.BorderSizePixel = 0
             BtnModule.Position = UDim2.new(0, 0, 0, 0)
@@ -673,7 +673,7 @@ UIG.Parent = Open
           
           LabelModule.Name = "LabelModule"
           LabelModule.Parent = Objs
-          LabelModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+          LabelModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
           LabelModule.BackgroundTransparency = 1.000
           LabelModule.BorderSizePixel = 0
           LabelModule.Position = UDim2.new(0, 0, NAN, 0)
@@ -711,7 +711,7 @@ UIG.Parent = Open
             
             ToggleModule.Name = "ToggleModule"
             ToggleModule.Parent = Objs
-            ToggleModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            ToggleModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             ToggleModule.BackgroundTransparency = 1.000
             ToggleModule.BorderSizePixel = 0
             ToggleModule.Position = UDim2.new(0, 0, 0, 0)
@@ -759,7 +759,7 @@ UIG.Parent = Open
               SetState = function(self, state)
                 if state == nil then state = not library.flags[flag] end
                 if library.flags[flag] == state then return end
-                services.TweenService:Create(ToggleSwitch, TweenInfo.new(0.2), {Position = UDim2.new(0, (state and ToggleSwitch.Size.X.Offset / 2 or 0), 0, 0), BackgroundColor3 = (state and Color3.fromRGB(255, 0, 0) or beijingColor)}):Play()
+                services.TweenService:Create(ToggleSwitch, TweenInfo.new(0.2), {Position = UDim2.new(0, (state and ToggleSwitch.Size.X.Offset / 2 or 0), 0, 0), BackgroundColor3 = (state and Color3.fromRGB(125, 125, 125) or beijingColor)}):Play()
                 library.flags[flag] = state
                 callback(state)
               end,
@@ -819,7 +819,7 @@ UIG.Parent = Open
     
             KeybindModule.Name = "KeybindModule"
             KeybindModule.Parent = Objs
-            KeybindModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            KeybindModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             KeybindModule.BackgroundTransparency = 1.000
             KeybindModule.BorderSizePixel = 0
             KeybindModule.Position = UDim2.new(0, 0, 0, 0)
@@ -1017,7 +1017,7 @@ UIG.Parent = Open
             
             SliderModule.Name = "SliderModule"
             SliderModule.Parent = Objs
-            SliderModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            SliderModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             SliderModule.BackgroundTransparency = 1.000
             SliderModule.BorderSizePixel = 0
             SliderModule.Position = UDim2.new(0, 0, 0, 0)
@@ -1055,7 +1055,7 @@ UIG.Parent = Open
             
             SliderPart.Name = "SliderPart"
             SliderPart.Parent = SliderBar
-            SliderPart.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            SliderPart.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             SliderPart.BorderSizePixel = 0
             SliderPart.Size = UDim2.new(0, 54, 0, 13)
             
@@ -1082,7 +1082,7 @@ UIG.Parent = Open
             
             SliderValue.Name = "SliderValue"
             SliderValue.Parent = SliderValBG
-            SliderValue.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            SliderValue.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             SliderValue.BackgroundTransparency = 1.000
             SliderValue.BorderSizePixel = 0
             SliderValue.Size = UDim2.new(1, 0, 1, 0)
@@ -1093,7 +1093,7 @@ UIG.Parent = Open
             
             MinSlider.Name = "MinSlider"
             MinSlider.Parent = SliderModule
-            MinSlider.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            MinSlider.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             MinSlider.BackgroundTransparency = 1.000
             MinSlider.BorderSizePixel = 0
             MinSlider.Position = UDim2.new(0.296728969, 40, 0.236842096, 0)
@@ -1107,7 +1107,7 @@ UIG.Parent = Open
             AddSlider.Name = "AddSlider"
             AddSlider.Parent = SliderModule
             AddSlider.AnchorPoint = Vector2.new(0, 0.5)
-            AddSlider.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            AddSlider.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             AddSlider.BackgroundTransparency = 1.000
             AddSlider.BorderSizePixel = 0
             AddSlider.Position = UDim2.new(0.810906529, 0, 0.5, 0)
@@ -1243,7 +1243,7 @@ UIG.Parent = Open
     
             DropdownModule.Name = "DropdownModule"
             DropdownModule.Parent = Objs
-            DropdownModule.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            DropdownModule.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             DropdownModule.BackgroundTransparency = 1.000
             DropdownModule.BorderSizePixel = 0
             DropdownModule.ClipsDescendants = true
@@ -1270,7 +1270,7 @@ UIG.Parent = Open
             DropdownOpen.Name = "DropdownOpen"
             DropdownOpen.Parent = DropdownTop
             DropdownOpen.AnchorPoint = Vector2.new(0, 0.5)
-            DropdownOpen.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            DropdownOpen.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
             DropdownOpen.BackgroundTransparency = 1.000
             DropdownOpen.BorderSizePixel = 0
             DropdownOpen.Position = UDim2.new(0.918383181, 0, 0.5, 0)
