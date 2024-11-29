@@ -1,9 +1,9 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 wait(1)
 OrionLib:MakeNotification({
-                    Name = "mspaint V3汉化",
+                    Name = "mspaint V3修复",
                     Content = "欢迎使用【修复补缺:小玄奘】",
-                    Time = 30
+                    Time = 10
                 })    
                 
                 local sound = Instance.new("Sound", workspace)
@@ -14,7 +14,7 @@ wait(1)
 OrionLib:MakeNotification({
                     Name = "mspaint V3汉化",
                     Content = "汉化作者:R-Exploit",
-                    Time = 30
+                    Time = 10
                 })    
                 
                 local sound = Instance.new("Sound", workspace)
@@ -23,9 +23,9 @@ sound:Play()
 
 wait(1)
 OrionLib:MakeNotification({
-                    Name = "此脚本不再开源！",
+                    Name = "感谢",
                     Content = "测试员:NIDO_MUNCISEEK--",
-                    Time = 30
+                    Time = 10
                 })    
                 
                 local sound = Instance.new("Sound", workspace)
