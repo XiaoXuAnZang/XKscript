@@ -254,7 +254,7 @@ uihide = false
  local win = lib:Window("格蕾丝Grace丨作者:剑修 小玄奘",Color3.fromRGB(255, 24, 24), Enum.KeyCode.RightControl) 
   
  local JK = win:Tab("主要其余")
- local JK = win:Tab("ESP")
+ local tab = win:Tab("ESP")
  local setup = win:Tab("移除怪物")
  local Dog = win:Tab("其余")
  
