@@ -584,6 +584,148 @@ end
 end
 end)
 
+tab:Toggle("拉杆透视", false, function(state)
+    EAT = state
+        if EAT then
+            _G.Tree2ESPInstances = {}
+            local esptable = {doors = {}}
+
+            local function createBillboard(instance, name, color)
+                local bill = Instance.new("BillboardGui", game.CoreGui)
+                bill.AlwaysOnTop = true
+                bill.Size = UDim2.new(0, 100, 0, 50)
+                bill.Adornee = instance
+                bill.MaxDistance = 2000
+
+                local mid = Instance.new("Frame", bill)
+                mid.AnchorPoint = Vector2.new(0.5, 0.5)
+                mid.BackgroundColor3 = color
+                mid.Size = UDim2.new(0, 8, 0, 8)
+                mid.Position = UDim2.new(0.5, 0, 0.5, 0)
+                Instance.new("UICorner", mid).CornerRadius = UDim.new(1, 0)
+                Instance.new("UIStroke", mid)
+
+                local txt = Instance.new("TextLabel", bill)
+                txt.AnchorPoint = Vector2.new(0.5, 0.5)
+                txt.BackgroundTransparency = 1
+                txt.TextColor3 = color
+                txt.Size = UDim2.new(1, 0, 0, 20)
+                txt.Position = UDim2.new(0.5, 0, 0.7, 0)
+                txt.Text = name
+                Instance.new("UIStroke", txt)
+
+                task.spawn(function()
+                    while bill do
+                        if bill.Adornee == nil or not bill.Adornee:IsDescendantOf(workspace) then
+                            bill.Enabled = false
+                            bill.Adornee = nil
+                            bill:Destroy()
+                        end
+                        task.wait()
+                    end
+                end)
+            end
+
+            local function monitorTree2()
+                for _, instance in pairs(workspace:GetDescendants()) do
+                    if instance:IsA("Model") and instance.Name == "BasePart" then
+                        createBillboard(instance, "拉杆", Color3.new(0, 255, 0)) -- Change color as needed
+                    end
+                end
+
+                workspace.DescendantAdded:Connect(function(instance)
+                    if instance:IsA("Model") and instance.Name == "BasePart" then
+                        createBillboard(instance, "拉杆", Color3.new(0, 255, 0)) -- Change color as needed
+                    end
+                end)
+            end
+
+            monitorTree2()
+            table.insert(_G.Tree2ESPInstances, esptable)
+				
+        else
+            if EAT then
+                for _, instance in pairs(_G.Tree2ESPInstances) do
+                    for _, v in pairs(instance.doors) do
+                        v.delete()
+                    end
+                end
+                _G.Tree2ESPInstances = nil
+            end
+        end
+    end)
+
+tab:Toggle("门透视", false, function(state)
+    EAT = state
+        if EAT then
+            _G.Tree2ESPInstances = {}
+            local esptable = {doors = {}}
+
+            local function createBillboard(instance, name, color)
+                local bill = Instance.new("BillboardGui", game.CoreGui)
+                bill.AlwaysOnTop = true
+                bill.Size = UDim2.new(0, 100, 0, 50)
+                bill.Adornee = instance
+                bill.MaxDistance = 2000
+
+                local mid = Instance.new("Frame", bill)
+                mid.AnchorPoint = Vector2.new(0.5, 0.5)
+                mid.BackgroundColor3 = color
+                mid.Size = UDim2.new(0, 8, 0, 8)
+                mid.Position = UDim2.new(0.5, 0, 0.5, 0)
+                Instance.new("UICorner", mid).CornerRadius = UDim.new(1, 0)
+                Instance.new("UIStroke", mid)
+
+                local txt = Instance.new("TextLabel", bill)
+                txt.AnchorPoint = Vector2.new(0.5, 0.5)
+                txt.BackgroundTransparency = 1
+                txt.TextColor3 = color
+                txt.Size = UDim2.new(1, 0, 0, 20)
+                txt.Position = UDim2.new(0.5, 0, 0.7, 0)
+                txt.Text = name
+                Instance.new("UIStroke", txt)
+
+                task.spawn(function()
+                    while bill do
+                        if bill.Adornee == nil or not bill.Adornee:IsDescendantOf(workspace) then
+                            bill.Enabled = false
+                            bill.Adornee = nil
+                            bill:Destroy()
+                        end
+                        task.wait()
+                    end
+                end)
+            end
+
+            local function monitorTree2()
+                for _, instance in pairs(workspace:GetDescendants()) do
+                    if instance:IsA("Model") and instance.Name == "Door" then
+                        createBillboard(instance, "门", Color3.new(0, 255, 0)) -- Change color as needed
+                    end
+                end
+
+                workspace.DescendantAdded:Connect(function(instance)
+                    if instance:IsA("Model") and instance.Name == "Door" then
+                        createBillboard(instance, "门", Color3.new(0, 255, 0)) -- Change color as needed
+                    end
+                end)
+            end
+
+            monitorTree2()
+            table.insert(_G.Tree2ESPInstances, esptable)
+				
+        else
+            if EAT then
+                for _, instance in pairs(_G.Tree2ESPInstances) do
+                    for _, v in pairs(instance.doors) do
+                        v.delete()
+                    end
+                end
+                _G.Tree2ESPInstances = nil
+            end
+        end
+    end)
+
 tab:Toggle("拉杆高亮透视", false, function(state)
     if state == true then
 for i,v in pairs(workspace:GetDescendants()) do 
