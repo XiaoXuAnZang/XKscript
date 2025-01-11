@@ -3,9 +3,6 @@
 
 setclipboard("XK脚本中心群915207093")
 
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/test-Actuator/refs/heads/main/ThroughSuccess.lua"))()
 local notification = loadstring(game:HttpGet('https://raw.githubusercontent.com/XiaoXuAnZang/test-Actuator/refs/heads/main/notification.lua'))()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/test-Actuator/refs/heads/main/Revenantnotification.txt", true))()
